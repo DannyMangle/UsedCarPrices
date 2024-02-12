@@ -1,17 +1,17 @@
 import pandas as pd
 import csv
 #model,year,price,transmission,mileage,fuelType,tax,mpg,engineSize
+file="/Users/dannymangle/Documents/GitHub/UsedCarPrices/mental_health_finaldata_1.csv"
 
-# filepath = r"/Users/dannymangle/Documents/GitHub/UsedCarPrices/Used Car Dataset.csv";
+df =pd.read_csv(file)
 
-# df =pd.read_csv(filepath)
+print(df.head(3))
 
-# print(df.head())
-
-with open ('toyota.csv','r') as file:
-    read = csv.DictReader(file)
+# with open ('mental_health_finaldata_1.csv','r') as file:
+#     read = csv.DictReader(file)
 
 
-    for line in read:
-        if line['model'] == "C-HR":
-            print(line['model'],line['price'])
+#     for line in read:
+#             print(line)
+
+            
