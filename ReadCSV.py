@@ -1,17 +1,10 @@
 import pandas as pd
-import csv
-#model,year,price,transmission,mileage,fuelType,tax,mpg,engineSize
-file="/Users/dannymangle/Documents/GitHub/UsedCarPrices/mental_health_finaldata_1.csv"
 
-df =pd.read_csv(file)
+def create_df():
+    file = "/Users/dannymangle/Documents/GitHub/UsedCarPrices/mental_health_finaldata_1.csv"    
+    df = pd.read_csv(file)
+    return df
 
-print(df.head(3))
+df = create_df()
 
-# with open ('mental_health_finaldata_1.csv','r') as file:
-#     read = csv.DictReader(file)
-
-
-#     for line in read:
-#             print(line)
-
-            
+print(df)
